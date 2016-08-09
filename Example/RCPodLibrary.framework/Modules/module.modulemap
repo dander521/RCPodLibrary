@@ -1,0 +1,6 @@
+framework module RCPodLibrary {
+  umbrella header "RCPodLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

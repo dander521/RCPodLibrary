@@ -1,9 +1,8 @@
 {
   "name": "RCPodLibrary",
   "version": "0.1.0",
-  "summary": "A short description of RCPodLibrary.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RCPodLibrary",
+  "summary": "A short description.",
+  "homepage": "https://github.com/dander521/RCPodLibrary",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +11,16 @@
     "RogerChen": "123020990@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/RCPodLibrary.git",
+    "git": "https://github.com/dander521/RCPodLibrary.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RCPodLibrary/Classes/**/*"
+  "source_files": "RCPodLibrary/Classes/**/*",
+  "resource_bundles": {
+    "RCPodLibrary": [
+      "RCPodLibrary/Assets/**/*.jpg"
+    ]
+  }
 }

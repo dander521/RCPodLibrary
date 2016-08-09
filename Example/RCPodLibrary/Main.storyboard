@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,44 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-IV-a62">
+                                <rect key="frame" x="0.0" y="0.0" width="189" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="kl9-47-rUk"/>
+                                    <constraint firstAttribute="height" constant="141" id="wt3-kF-QL6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dQT-6B-HFB">
+                                <rect key="frame" x="0.0" y="154" width="189" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="Epm-FB-aJh"/>
+                                    <constraint firstAttribute="width" constant="189" id="pyQ-He-SgQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJg-pC-uQF">
+                                <rect key="frame" x="0.0" y="313" width="189" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="K2K-gd-3Y9"/>
+                                    <constraint firstAttribute="width" constant="189" id="zSa-Ze-fXd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hz8-IV-a62" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-20" id="BCm-wT-7P2"/>
+                            <constraint firstItem="hz8-IV-a62" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="topMargin" id="Jju-gv-y5V"/>
+                            <constraint firstItem="BJg-pC-uQF" firstAttribute="top" secondItem="dQT-6B-HFB" secondAttribute="bottom" constant="18" id="Rcc-wF-x54"/>
+                            <constraint firstItem="dQT-6B-HFB" firstAttribute="top" secondItem="hz8-IV-a62" secondAttribute="bottom" constant="13" id="aNf-6y-7x7"/>
+                            <constraint firstItem="dQT-6B-HFB" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-20" id="mXf-ap-O7b"/>
+                            <constraint firstItem="BJg-pC-uQF" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-20" id="pHa-Z0-Blk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewOne" destination="hz8-IV-a62" id="fuB-bi-FBa"/>
+                        <outlet property="imageViewThree" destination="BJg-pC-uQF" id="crP-Cf-8bG"/>
+                        <outlet property="imageViewTwo" destination="dQT-6B-HFB" id="O3c-wR-dq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
