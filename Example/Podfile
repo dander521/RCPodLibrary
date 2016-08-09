@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RCPodLibrary_Example' do
+  pod 'RCPodLibrary', :path => '../'
+
+  target 'RCPodLibrary_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
